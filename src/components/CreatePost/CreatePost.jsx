@@ -17,9 +17,9 @@ const CreatePost = ({ addPost }) => {
         />
         {selectedGif && (
           <div className='post-gif-container'>
-            <button className='close-btn' onClick={() => setSelectedGif(null)}>
+            <div className='close-btn' onClick={() => setSelectedGif(null)}>
               X
-            </button>
+            </div>
             <img src={selectedGif} alt='gif' />
           </div>
         )}
